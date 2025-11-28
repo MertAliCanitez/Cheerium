@@ -33,3 +33,11 @@ frontend/
 
 ## AI entegrasyonu
 - `/api/ai/suggest-message` ve `/api/ai/card-summary` uçları hazır; gerçek OpenAI anahtarını `AiService` içine ve yapılandırmaya ekleyerek değiştirin.
+
+## Birleştirme/Conflict rehberi
+- Mevcut durum: depo temiz ve `work` dalında açık bir conflict yok; yeni değişiklikleri çekerken `git status` ile kontrol edin.
+- Eğer ana dalda farklı değişiklikler geldiyse `git fetch origin` ardından `git rebase origin/main` veya `git merge origin/main` ile entegre edin.
+- Çatışma olursa `<<<<<<<`, `=======`, `>>>>>>>` imlerini `rg "^<<<<<<<"` ile tarayıp elle temizleyin; ardından ilgili dosyalarda format (
+  Angular için `ng lint --fix`, .NET için `dotnet format`), test ve `git add` sonrasında commit atın.
+- Docker-compose dosyaları veya ortam ayarlarında farklılık varsa `.env` değerlerini korumak için yerel kopyaları `.env.local` gibi bir dosyada tutun;
+  `.gitignore` sayesinde paylaşılan dosyalar temiz kalır.
