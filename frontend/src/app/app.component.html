@@ -1,3 +1,21 @@
+<header class="surface" style="margin: 18px auto 0; max-width: 1100px; padding: 12px 18px; display: flex; align-items: center; gap: 12px;">
+  <div style="display:flex; align-items:center; gap:10px;">
+    <div style="width:34px;height:34px;border-radius:12px;background:linear-gradient(135deg,#a855f7,#22d3ee);"></div>
+    <div>
+      <div style="font-weight:800; letter-spacing:0.5px;">Smiile Board TR</div>
+      <small style="color:#cbd5e1;">Kutlama & Takdir kartları</small>
+    </div>
+  </div>
+  <span style="flex:1;"></span>
+  <a mat-button routerLink="/" routerLinkActive="active">Ana Sayfa</a>
+  <a mat-button routerLink="/card/create" routerLinkActive="active">Kart Oluştur</a>
+  <a mat-button routerLink="/profile" routerLinkActive="active">Koleksiyonlar</a>
+  <a mat-button routerLink="/workspace" routerLinkActive="active">Şirket Alanı</a>
+  <button mat-raised-button color="primary" routerLink="/card/create">Hemen Başla</button>
+</header>
+<main class="container">
+  <router-outlet></router-outlet>
+</main>
 <mat-toolbar color="primary">
   <span>{{ title }}</span>
   <span style="flex: 1 1 auto;"></span>

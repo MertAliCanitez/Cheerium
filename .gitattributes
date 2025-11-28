@@ -1,0 +1,8 @@
+* text=auto eol=lf
+*.cs diff=csharp
+*.ts diff=typescript
+*.scss diff=css
+*.css diff=css
+*.html diff=html
+*.json text
+*.md text

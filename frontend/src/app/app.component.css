@@ -1,3 +1,8 @@
+header a.active { color: #a5f3fc; font-weight: 700; }
+header a { color: #e2e8f0; text-decoration: none; }
+header button { font-weight: 700; }
+
+main { width: 100%; }
 .content {
   padding: 16px;
 }
