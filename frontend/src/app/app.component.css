@@ -3,3 +3,12 @@ header a { color: #e2e8f0; text-decoration: none; }
 header button { font-weight: 700; }
 
 main { width: 100%; }
+.content {
+  padding: 16px;
+}
+
+mat-toolbar a {
+  color: white;
+  text-decoration: none;
+  margin-left: 8px;
+}

@@ -16,3 +16,13 @@
 <main class="container">
   <router-outlet></router-outlet>
 </main>
+<mat-toolbar color="primary">
+  <span>{{ title }}</span>
+  <span style="flex: 1 1 auto;"></span>
+  <a mat-button routerLink="/card/create">Kart Oluştur</a>
+  <a mat-button routerLink="/profile">Profil</a>
+  <a mat-button routerLink="/workspace">Şirket Alanı</a>
+</mat-toolbar>
+<div class="content">
+  <router-outlet></router-outlet>
+</div>
