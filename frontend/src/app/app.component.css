@@ -1,0 +1,9 @@
+.content {
+  padding: 16px;
+}
+
+mat-toolbar a {
+  color: white;
+  text-decoration: none;
+  margin-left: 8px;
+}
